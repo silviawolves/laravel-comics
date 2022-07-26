@@ -20,7 +20,10 @@
 
     </main>
 
-    @include('partials.footer')
+    <footer>
+        @include('partials.footer')
+    </footer>
+    @include('partials.signup')
 
 </body>
 
