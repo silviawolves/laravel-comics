@@ -2,8 +2,54 @@
 @import 'partials/header';
 @import 'partials/footer';
 @import 'partials/signUp';
-@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;700&display=swap');
 
 body {
     font-family: 'Asap Condensed', sans-serif;
+
+    main {
+        background-color: #1C1C1C;
+        font-size: 1.5rem;
+        color: white;
+        font-weight: bold;
+        
+        .banner-fumetti {
+            background-image: url('/img/jumbotron.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+        }
+        
+        .flag {
+            background-color: #0282F9;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: .3rem 2rem;
+            position: absolute;
+            top: -25px;
+        }
+    }
+
+    .banner {
+        background-color: #0282F9;
+        padding: 2.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .smaller {
+            width: 40px;
+        }
+
+        span {
+            font-size: .7rem;
+        }
+    }
 }

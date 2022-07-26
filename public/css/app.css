@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;
-
-700&display=swap);@charset "UTF-8";/*!
+@charset "UTF-8";/*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
@@ -103,5 +101,52 @@ footer img {
 
 body {
   font-family: "Asap Condensed", sans-serif;
+}
+
+body main {
+  background-color: #1C1C1C;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+body main .banner-fumetti {
+  background-image: url("/img/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+body main .flag {
+  background-color: #0282F9;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.3rem 2rem;
+  position: absolute;
+  top: -25px;
+}
+
+body .banner {
+  background-color: #0282F9;
+  padding: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .banner a {
+  text-decoration: none;
+  color: white;
+}
+
+body .banner img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+body .banner .smaller {
+  width: 40px;
+}
+
+body .banner span {
+  font-size: 0.7rem;
 }
 
