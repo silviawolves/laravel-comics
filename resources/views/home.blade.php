@@ -25,16 +25,5 @@
 
 {{--banner azzurro--}}
 @section('banner-cosette')
-<div class="banner">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-2" v-for="(img, i) in bannerArray" :key="i">
-                    <a href="javascript:void(O)">
-                        {{-- <img :src="`img/${img.immagine}.${img.estensione}`" :alt="`immagine di ${img.nome}`" :class="{'smaller' : i === 4}">
-                        <span class="text-uppercase">{{ img.nome }}</span> --}}
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('partials.banner')
 @endsection
