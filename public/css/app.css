@@ -10,6 +10,7 @@
 header .blue-banner {
   height: 20px;
   background-color: #0282F9;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header .blue-banner .container {
@@ -63,6 +64,19 @@ header .my-navbar ul li a .active {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.my-card .card-img {
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+
+.my-card .card-title {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 0.7rem;
+  padding: 1rem 0;
 }
 
 footer {
