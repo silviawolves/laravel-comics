@@ -1,0 +1,61 @@
+header {
+    background-color: white;
+
+    .blue-banner {
+        height: 20px;
+        background-color: #0282F9;
+
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            color: white;
+            text-transform: uppercase;
+            font-size: .5rem;
+            font-weight: bold;
+            align-items: center;
+        }
+    }
+
+    .my-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        img {
+            height: 60px;
+        }
+
+        ul li {
+            font-size: .8rem;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+
+            a {
+                height: 100%;
+                text-decoration: none;
+                opacity: 60%;
+                color: black;
+
+                &:focus {
+                    color: #0282F9;
+                    opacity: 100%;
+                }
+
+                &:focus .active {
+                    display: block;
+                }
+                
+                .active {
+                    width: 100%;
+                    display: none;
+                    border-bottom: 4px solid #0282F9;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    } 
+}
