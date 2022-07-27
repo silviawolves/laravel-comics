@@ -43,7 +43,7 @@
 
     <div class="single-lower">
         <div class="container">
-            <div class="row">
+            <div class="row gx-5">
                 <div class="col">
                     <h5>Talent</h5>
                     <div class="row flex-column">
@@ -61,7 +61,7 @@
                                     <p class="loop">
                                         @foreach ($fumetto['artists'] as $artista)
                                             <span class="lower-part">{{ $artista }}</span>
-                                            @if (!$loop->last)
+                                                @if (!$loop->last)
                                                     <span class="lower-part">, </span>
                                                 @endif      
                                         @endforeach
@@ -94,9 +94,65 @@
 
                     </div>
                 </div>
+
                 <div class="col">
                     <h5>Specs</h5>
+                    <div class="row flex-column">
+
+                        {{-- GENERE --}}
+                        <div class="col border-top">
+                            <div class="row">
+
+                                <div class="col-3">
+                                    <h6>Series:</h6>
+                                </div>
+
+                                <div class="col-9">
+
+                                    <p class="loop">
+                                        <span class="lower-part text-uppercase">{{ $fumetto['series'] }}</span>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- PREZZO --}}
+                        <div class="col border-top">
+                            <div class="row">
+
+                                <div class="col-3">
+                                    <h6>U.S Price:</h6>
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="loop">
+                                        <span class="lower-part text-black opacity-75">{{ $fumetto['price'] }}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- DATA --}}
+                        <div class="col border-top border-bottom">
+                            <div class="row">
+
+                                <div class="col-3">
+                                    <h6>On Sale Date:</h6>
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="loop">
+                                        <span class="lower-part text-black opacity-75">{{ date('M d Y', strtotime($fumetto["sale_date"])) }}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </div>
