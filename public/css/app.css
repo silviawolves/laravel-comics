@@ -216,7 +216,7 @@ footer img {
   border-top-width: 1px;
   border-top-style: solid;
   padding-top: 1rem;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
 }
 
 .single .single-lower h5 {
@@ -234,8 +234,8 @@ footer img {
 }
 
 .single .single-lower .loop {
-  padding-top: 0.5rem;
-  padding-bottom: 0;
+  padding: 0.5rem;
+  margin: 0;
   line-height: 90%;
   opacity: 1;
 }
@@ -243,6 +243,41 @@ footer img {
 .single .single-lower .lower-part {
   color: #00A9D9;
   font-size: 0.7rem;
+}
+
+.grigino {
+  background-color: #F6F6F6;
+  border-top-color: #e9e9e9;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.grigino .col:last-child {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #e9e9e9;
+}
+
+.grigino .my-int {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #e9e9e9;
+}
+
+.grigino .my-int h6 {
+  text-transform: uppercase;
+  color: gray;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.grigino .my-int svg {
+  height: 35px;
+  fill: lightgray;
 }
 
 body {

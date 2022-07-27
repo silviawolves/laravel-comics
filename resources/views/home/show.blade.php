@@ -162,9 +162,9 @@
 @endsection
 
 
-{{--banner azzurro--}}
+{{--banner grigino--}}
 @section('banner-cosette')
 
-    {{--@include('')--}}
+    @include('partials.grigino')
 
 @endsection
