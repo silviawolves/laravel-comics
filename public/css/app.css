@@ -193,6 +193,7 @@ footer img {
   font-size: 0.9rem;
   color: black;
   opacity: 0.5;
+  padding-bottom: 2rem;
 }
 
 .single .content {
@@ -207,6 +208,39 @@ footer img {
   opacity: 0.5;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.single .single-lower {
+  background-color: #F6F6F6;
+  border-top-color: #e9e9e9;
+  border-top-width: 1px;
+  border-top-style: solid;
+  padding: 1rem;
+}
+
+.single .single-lower h5 {
+  font-family: "Asap Condensed", sans-serif;
+  color: #003F5E;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.single .single-lower h6 {
+  color: #003F5E;
+  font-size: 0.7rem;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.single .single-lower .loop {
+  padding-bottom: 0;
+  line-height: 100%;
+  opacity: 1;
+}
+
+.single .single-lower .lower-part {
+  color: #00A9D9;
+  font-size: 0.7rem;
 }
 
 body {

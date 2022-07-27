@@ -14,7 +14,6 @@
         <a href="{{ route('home') }}"><div class="fumetto-banner low">View gallery</div></a>
 
         <div class="row g-3">
-
                 <div class="col-8">
                     <h3 class="text-uppercase">{{ $fumetto['title'] }}</h3>
                     
@@ -39,10 +38,69 @@
                         <img src="img/adv.jpg" alt="">
                     </div>
                 </div>
-
         </div>
-        
     </div>
+
+    <div class="single-lower">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>Talent</h5>
+                    <div class="row flex-column">
+
+                        {{-- ARTISTI --}}
+                        <div class="col border-top">
+                            <div class="row">
+
+                                <div class="col-3">
+                                    <h6>Art by:</h6>
+                                </div>
+
+                                <div class="col-9">
+
+                                    <p class="loop">
+                                        @foreach ($fumetto['artists'] as $artista)
+                                            <span class="lower-part">{{ $artista }}</span>
+                                            @if (!$loop->last)
+                                                    <span class="lower-part">, </span>
+                                                @endif      
+                                        @endforeach
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- SCRITTORI --}}
+                        <div class="col border-top border-bottom">
+                            <div class="row">
+
+                                <div class="col-3">
+                                    <h6>Written by:</h6>
+                                </div>
+
+                                <div class="col-9">
+                                    <p class="loop">
+                                        @foreach ( $fumetto['writers'] as $scrittore )
+                                            <span class="lower-part">{{ $scrittore }}</span>
+                                                @if (!$loop->last)
+                                                    <span class="lower-part">, </span>
+                                                @endif                                        
+                                        @endforeach
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <h5>Specs</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </div>
 
 @endsection
