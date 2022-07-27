@@ -17,13 +17,14 @@
         @endforeach
 
     </div>
-
-    <button class="btn btn-primary text-uppercase rounded-0 px-5 d-block mx-auto mt-4">Load More</button>
     
 </div>
 @endsection
 
+
 {{--banner azzurro--}}
 @section('banner-cosette')
-    @include('partials.banner')
+
+    @include('')
+
 @endsection

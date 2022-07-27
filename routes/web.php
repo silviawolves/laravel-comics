@@ -15,5 +15,25 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $fumetti = config('fumetti');
-    return view('home', compact('fumetti'));
-});
+    return view('home.index', compact('fumetti'));
+}) -> name('home.index');
+
+Route::get('/{id}', function ($id) {
+    $fumetti = config('fumetti');
+    $fumettoSelezionato = null;
+
+    foreach ($fumetti as $i => $fumetto) {
+        if ($fumetto["id"] === intval($id)) {
+            $fumettoSelezionato = $fumetto;
+            break;
+        }
+    }
+
+    if (is_null($fumettoSelezionato)) {
+        abort("404");
+    }
+
+    return view('home.show', [
+            'fumetto' => $fumettoSelezionato
+        ]);
+}) -> name('home.show');
