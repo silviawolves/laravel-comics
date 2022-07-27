@@ -1,7 +1,7 @@
 <div>
     <div class="my-card">
         <div class="card-img">
-            <a href="">
+            <a href="{{ route('home.show', $fumetto['id']) }}">
                 <img src="{{ $fumetto['thumb'] }}">
             </a>
         </div>

@@ -1,24 +1,22 @@
 @extends('layouts.app')
 
-{{--fumetti--}}
+{{--fumetto singolo--}}
 @section('container-fumetti')
+
 <div class="banner-fumetti"></div>
 <div class="container pt-5 pb-3 position-relative">
     <div class="flag">Current Series</div>
 
     <div class="row g-3">
 
-        @foreach ($fumetti as $fumetto)
             <div class="col">
-                @include('partials.cardfumetto', [
-                    'fumetto' => $fumetto
-                ])
+                <h1>{{ $fumetto['description'] }}</h1>
             </div>
-        @endforeach
 
     </div>
     
 </div>
+
 @endsection
 
 

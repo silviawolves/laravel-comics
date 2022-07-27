@@ -13,11 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//pagina base
 Route::get('/', function () {
     $fumetti = config('fumetti');
     return view('home.index', compact('fumetti'));
-}) -> name('home.index');
+}) -> name('home');
 
+//pagine singoli fumetti
 Route::get('/{id}', function ($id) {
     $fumetti = config('fumetti');
     $fumettoSelezionato = null;
@@ -33,7 +35,10 @@ Route::get('/{id}', function ($id) {
         abort("404");
     }
 
+    //dump($fumettoSelezionato);
+
     return view('home.show', [
             'fumetto' => $fumettoSelezionato
         ]);
+
 }) -> name('home.show');
