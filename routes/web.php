@@ -35,8 +35,6 @@ Route::get('/{id}', function ($id) {
         abort("404");
     }
 
-    //dump($fumettoSelezionato);
-
     return view('home.show', [
             'fumetto' => $fumettoSelezionato
         ]);

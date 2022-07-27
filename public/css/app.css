@@ -113,6 +113,50 @@ footer img {
   text-decoration: none;
 }
 
+.single {
+  background-color: white;
+}
+
+.single .blue-div {
+  background-color: #0282F9;
+  height: 50px;
+}
+
+.single .fumetto-show {
+  height: 250px;
+  border: 1px solid white;
+  position: absolute;
+  top: -270px;
+}
+
+.single .fumetto-banner {
+  background-color: #00A9D9;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  height: 20px;
+  padding: 0 0.3rem;
+  position: absolute;
+}
+
+.single .fumetto-banner.top {
+  top: -269px;
+  left: 13px;
+}
+
+.single .fumetto-banner.low {
+  text-align: center;
+  width: 164px;
+  top: -41px;
+  left: 13px;
+}
+
+.single h3 {
+  color: #003F5E;
+}
+
 body {
   font-family: "Asap Condensed", sans-serif;
 }
